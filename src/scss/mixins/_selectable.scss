@@ -1,0 +1,14 @@
+// ------------------------------------------------------------------------
+// CSS Util: _selectable.scss 
+// ------------------------------------------------------------------------
+
+@mixin bg-selectable($color) {
+  &.bg-selectable {
+    &:hover {
+      background-color: saturate(darken($color, 5%), 10) !important;
+    }
+    &:active {
+      background-color: darken($color, 10%) !important;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+// ------------------------------------------------------------------------
+// CSS Util: _text-truncate.scss 
+// ------------------------------------------------------------------------
+
+@mixin text-truncate() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

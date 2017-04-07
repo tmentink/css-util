@@ -1,0 +1,27 @@
+{
+  "name": "util",
+  "version": "1.0.0",
+  "description": "TODO: Write a project description",
+  "main": "demo/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tmentink/css-util.git"
+  },
+  "author": "Trent Mentink",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tmentink/css-util/issues"
+  },
+  "homepage": "https://github.com/tmentink/css-util",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0",
+    "grunt-stamp": "^0.3.0",
+    "load-grunt-tasks": "^3.5.2",
+    "time-grunt": "^1.4.0"
+  }
+}

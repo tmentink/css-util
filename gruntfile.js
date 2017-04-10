@@ -5,7 +5,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
     banner: "/*!\n" +
-                " * <%= pkg.name %> v<%= pkg.version %> (<%= pkg.homepage %>)\n" +
+                " * CSS-Util v<%= pkg.version %> (<%= pkg.homepage %>)\n" +
                 " * Copyright <%= grunt.template.today('yyyy') %> <%= pkg.author %>\n" +
                 " * Licensed under <%= pkg.license %>\n" +
                 " */\n",
@@ -49,5 +49,5 @@ module.exports = function(grunt) {
   require("time-grunt")(grunt)
 
   grunt.registerTask("default", ["sass", "stamp"])
-};
+}
 

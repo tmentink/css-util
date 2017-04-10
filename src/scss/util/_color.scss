@@ -8,20 +8,20 @@
 @each $color_name, $color in $colors {
   @each $color_type, $color_value in $color {
     @if $color_type == "base" {
-      .#{$color_name}-bg {
+      .bg-#{$color_name} {
         background-color: $color_value !important;
         @include bg-selectable($color_value)
       }
-      .#{$color_name}-text {
+      .text-#{$color_name} {
         color: $color_value !important;
       }
     }
-    @else if $color_name != "shades" {
-      .#{$color_name}-bg.bg-#{$color_type} {
+    @else {
+      .bg-#{$color_name}.bg-#{$color_type} {
         background-color: $color_value !important;
         @include bg-selectable($color_value)
       }
-      .#{$color_name}-text.text-#{$color_type} {
+      .text-#{$color_name}.text-#{$color_type} {
         color: $color_value !important;
       }
     }
@@ -30,13 +30,11 @@
 
 
 //
-// Shade classes
+// Transparent classes
 //
-@each $color, $color_value in $shades {
-  .#{$color}-bg {
-    background-color: $color_value !important;
-  }
-  .#{$color}-text {
-    color: $color_value !important;
-  }
+.bg-transparent {
+  background-color: transparent !important;
+}
+.text-transparent {
+  color: transparent !important;
 }

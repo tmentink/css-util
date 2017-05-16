@@ -1,5 +1,5 @@
 /*!
- * CSS-Util v1.0.0 (https://github.com/tmentink/css-util)
+ * CSS-Util v1.1.0 (https://github.com/tmentink/css-util)
  * Copyright 2017 Trent Mentink
  * Licensed under MIT
  */
@@ -6800,6 +6800,14 @@
   }
 }
 
+.text-underline {
+  text-decoration: underline !important;
+}
+
+.text-linethrough {
+  text-decoration: line-through !important;
+}
+
 .text-lowercase {
   text-transform: lowercase !important;
 }
@@ -6812,16 +6820,30 @@
   text-transform: capitalize !important;
 }
 
-.font-weight-normal {
-  font-weight: normal;
+.text-normal {
+  font-weight: normal !important;
 }
 
-.font-weight-bold {
-  font-weight: bold;
+.text-bold {
+  font-weight: bold !important;
 }
 
-.font-italic {
-  font-style: italic;
+.text-italic {
+  font-style: italic !important;
+}
+
+.select-all {
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+}
+
+.select-none {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .visible {

@@ -8,7 +8,7 @@
         <meta name="author" content="Trent Mentink">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
-        <link rel="stylesheet" type="text/css" href="../dist/util.css">
+        <link rel="stylesheet" type="text/css" href="../dist/css-util.css">
         
         <style type="text/css">
           .block {
@@ -61,14 +61,14 @@
         $(document).ready(function(){
           var bgColor = "";
           Object.keys(themeColors).forEach(function(key) {
-            bgColor += "<div class='block " + themeColors[key] + "-bg bg-selectable'></div>"
+            bgColor += "<div class='block bg-" + themeColors[key] + " bg-selectable'></div>"
           });
 
           $("#bg-color").html(bgColor);
 
           var textColor = "";
           Object.keys(themeColors).forEach(function(key) {
-            textColor += "<div class='block bordered bg-white " + themeColors[key] + "-text'><span>" + key + "</span></div>"
+            textColor += "<div class='block bordered bg-white text-" + themeColors[key] + "'><span>" + key + "</span></div>"
           });
 
           $("#text-color").html(textColor);

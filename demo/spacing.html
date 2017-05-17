@@ -1,0 +1,98 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>CSS Util Spacing</title>
+        <meta name="description" content="">
+        <meta name="author" content="Trent Mentink">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="../dist/css-util.min.css">      
+        <style type="text/css">         
+          .ui.list b {
+            display: inline-block;
+            width: 15px;
+          }
+
+          #ulBreakpoint b {
+            width: 38px;
+          }
+
+          #ulSize b {
+            width: 25px;
+          }
+        </style>
+    </head>
+    <body>
+      <div class="ui container mb-2">       
+        <h1 class="mb-0">Usage</h1>
+        <p>Assign responsive-friendly <b>margin</b> or <b>padding</b> values to an element or a subset of its sides with shorthand classes. Includes support for individual properties, all properties, and vertical and horizontal properties.</p>
+
+        <h3 class="mb-0">Notation</h3>
+        <p>The classes are named using the format <b>{property}-{sides}-{size}</b>. To only apply the class at certain breakpoints, use the format <b>{property}-{sides}-{breakpoint}-{size}</b>.</p>
+
+        <div class="ui four column doubling stackable padded grid">
+          <div class="column px-1">
+            <h4 class="mb-0">Properties</h4>
+            <ul id="ulProperty" class="ui list">
+              <li><b>m</b> - margin</li>
+              <li><b>p</b> - padding</li>
+            </ul>
+          </div>
+          
+          <div class="column px-1">
+            <h4 class="mb-0">Sides</h4>
+            <ul id="ulSides" class="ui list">
+              <li><b>t</b> - top </li>
+              <li><b>b</b> - bottom</li>
+              <li><b>l</b> - left</li>
+              <li><b>r</b> - right</li>
+              <li><b>x</b> - both left and right</li>
+              <li><b>y</b> - both top and bottom</li>
+              <li>blank - all 4 sides</li>
+            </ul>
+          </div>
+
+          <div class="column px-1">
+            <h4 class="mb-0">Breakpoints</h4>
+            <ul id="ulBreakpoint" class="ui list">
+              <li><b>sm</b> - min-width: 576px </li>
+              <li><b>md</b> - min-width: 768px</li>
+              <li><b>lg</b> - min-width: 992px</li>
+              <li><b>xl</b> - min-width: 1200px</li>
+              <li>blank - min-width: 0</li>
+            </ul>
+          </div>
+
+          <div class="column px-1">
+            <h4 class="mb-0">Sizes</h4>
+            <ul id="ulSize" class="ui list">
+              <li><b>1</b> - .5rem </li>
+              <li><b>2</b> - 1rem</li>
+              <li><b>3</b> - 1.5rem</li>
+              <li><b>4</b> - 2rem</li>
+              <li><b>5</b> - 2.5rem</li>
+              <li><b>6</b> - 3rem</li>
+              <li><b>7</b> - 3.5rem</li>
+              <li><b>8</b> - 4rem</li>
+              <li><b>9</b> - 4.5rem</li>
+              <li><b>10</b> - 5rem</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 class="mb-0">Horizontal centering</h3>
+        <p>Additionally, there is an <b>.mx-auto</b> class that sets the elements margin-left and margin-right to <b>auto</b>. This is useful for horizontally centering fixed-width block level content.</p>
+
+        <div class="ui segment mx-auto" style="width: 400px;">
+          &lt;div class="mx-auto" style="width: 400px;"&gt;&lt;/div&gt;  
+        </div>
+      </div>
+
+      <!-- SCRIPTS
+      ===========================================-->
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/semantic.min.js"></script>
+    </body>
+</html>

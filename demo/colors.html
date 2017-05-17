@@ -1,0 +1,400 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>CSS Util Colors</title>
+        <meta name="description" content="">
+        <meta name="author" content="Trent Mentink">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="../dist/css-util.min.css">
+        
+        <style type="text/css">         
+          [data-color] div {
+            border: 1px solid rgba(0,0,0,0.25);
+          }
+        </style>
+    </head>
+    <body>
+      <div class="ui container">       
+        <h1 class="mb-0">Usage</h1>
+        <p>This color palette is mixture of semantic's base colors and material design. Each of these colors is defined with a base color class and optional lighten, darken and accent classes. This system provides a consistent and robust color palette without the hassle of working with hex values.</p>
+
+        <h4 class="mb-0">Background Color</h4>
+        <p>To apply a background color, just add the color name prefixed with <b>bg-</b> to the element as a class. The optional shade classes must also be prefixed with <b>bg-</b>.</p>
+
+        <div class="ui segment bg-teal bg-lighten-2">
+          &lt;div class="bg-teal bg-lighten-2"&gt;&lt;/div&gt;  
+        </div>
+
+        <h5 class="mb-0">Selectable</h5>
+        <p>You can make a background appear selectable by adding the class <b>bg-selectable</b>. This will change the color on both <b>:hover</b> and <b>:active</b> states.</p>
+        <div class="ui segment bg-teal bg-lighten-2 bg-selectable">
+          &lt;div class="bg-teal bg-lighten-2 bg-selectable"&gt;&lt;/div&gt;  
+        </div>
+
+        <h4 class="mb-0">Text Color</h4>
+        <p>To apply a text color, prefix your classes with <b>text-</b>.</p>
+        <div class="ui segment text-teal text-darken-2">
+          &lt;div class="text-teal text-darken-2"&gt;&lt;/div&gt;  
+        </div>
+
+        <h1 class="mb-1">Color Palette</h1>
+        <div id="cbxSelectable" class="ui checkbox">
+          <input type="checkbox">
+          <label>Add bg-selectable class</label>
+        </div>
+
+        <div class="ui four column doubling stackable padded grid">
+          <div class="row">
+            <div data-color="red" class="column p-0"></div>
+            <div data-color="pink" class="column p-0"></div>
+            <div data-color="purple" class="column p-0"></div>
+            <div data-color="violet" class="column p-0"></div>
+          </div>
+          <div class="row">
+            <div data-color="blue" class="column p-0"></div>
+            <div data-color="lightBlue" class="column p-0"></div>
+            <div data-color="cyan" class="column p-0"></div>
+            <div data-color="teal" class="column p-0"></div>
+          </div>
+          <div class="row">
+            <div data-color="green" class="column p-0"></div>
+            <div data-color="olive" class="column p-0"></div>
+            <div data-color="yellow" class="column p-0"></div>
+            <div data-color="orange" class="column p-0"></div>
+          </div>
+          <div class="row">
+            <div data-color="brown" class="column p-0"></div>
+            <div data-color="grey" class="column p-0"></div>
+            <div data-color="base" class="column p-0"></div>
+            <div class="column p-0"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SCRIPTS
+      ===========================================-->
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/semantic.min.js"></script>
+      <script type="text/javascript">
+        var colors = {
+          red: {
+            lighten5:   "#FFEBEE",
+            lighten4:   "#FFCDD2",
+            lighten3:   "#EF9A9A",
+            lighten2:   "#E57373",
+            lighten1:   "#EF5350",
+            base:       "#F44336",
+            darken1:    "#E53935",
+            darken2:    "#D32F2F",
+            darken3:    "#C62828",
+            darken4:    "#B71C1C",
+            accent1:    "#FF8A80",
+            accent2:    "#FF5252",
+            accent3:    "#FF1744",
+            accent4:    "#D50000"
+          },
+          pink: {
+            lighten5:   "#FCE4EC",
+            lighten4:   "#F8BBD0",
+            lighten3:   "#F48FB1",
+            lighten2:   "#F06292",
+            lighten1:   "#EC407A",
+            base:       "#E91E63",
+            darken1:    "#D81B60",
+            darken2:    "#C2185B",
+            darken3:    "#AD1457",
+            darken4:    "#880E4F",
+            accent1:    "#FF80AB",
+            accent2:    "#FF4081",
+            accent3:    "#F50057",
+            accent4:    "#C51162"
+          },
+          purple: {
+            lighten5:   "#F3E5F5",
+            lighten4:   "#E1BEE7",
+            lighten3:   "#CE93D8",
+            lighten2:   "#BA68C8",
+            lighten1:   "#AB47BC",
+            base:       "#9C27B0",
+            darken1:    "#8E24AA",
+            darken2:    "#7B1FA2",
+            darken3:    "#6A1B9A",
+            darken4:    "#4A148C",
+            accent1:    "#EA80FC",
+            accent2:    "#E040FB",
+            accent3:    "#D500F9",
+            accent4:    "#AA00FF"
+          },
+          violet: {
+            lighten5:   "#EDE7F6",
+            lighten4:   "#D1C4E9",
+            lighten3:   "#B39DDB",
+            lighten2:   "#9575CD",
+            lighten1:   "#7E57C2",
+            base:       "#673AB7",
+            darken1:    "#5E35B1",
+            darken2:    "#512DA8",
+            darken3:    "#4527A0",
+            darken4:    "#311B92",
+            accent1:    "#B388FF",
+            accent2:    "#7C4DFF",
+            accent3:    "#651FFF",
+            accent4:    "#6200EA"
+          },
+          blue: {
+            lighten5:   "#E3F2FD",
+            lighten4:   "#BBDEFB",
+            lighten3:   "#90CAF9",
+            lighten2:   "#64B5F6",
+            lighten1:   "#42A5F5",
+            base:       "#2196F3",
+            darken1:    "#1E88E5",
+            darken2:    "#1976D2",
+            darken3:    "#1565C0",
+            darken4:    "#0D47A1",
+            accent1:    "#82B1FF",
+            accent2:    "#448AFF",
+            accent3:    "#2979FF",
+            accent4:    "#2962FF"
+          },
+          lightBlue: {
+            lighten5:   "#E1F5FE",
+            lighten4:   "#B3E5FC",
+            lighten3:   "#81D4FA",
+            lighten2:   "#4FC3F7",
+            lighten1:   "#29B6F6",
+            base:       "#03A9F4",
+            darken1:    "#039BE5",
+            darken2:    "#0288D1",
+            darken3:    "#0277BD",
+            darken4:    "#01579B",
+            accent1:    "#80D8FF",
+            accent2:    "#40C4FF",
+            accent3:    "#00B0FF",
+            accent4:    "#0091EA"
+          },
+          cyan: {
+            lighten5:   "#E0F7FA",
+            lighten4:   "#B2EBF2",
+            lighten3:   "#80DEEA",
+            lighten2:   "#4DD0E1",
+            lighten1:   "#26C6DA",
+            base:       "#00BCD4",
+            darken1:    "#00ACC1",
+            darken2:    "#0097A7",
+            darken3:    "#00838F",
+            darken4:    "#006064",
+            accent1:    "#84FFFF",
+            accent2:    "#18FFFF",
+            accent3:    "#00E5FF",
+            accent4:    "#00B8D4"
+          },
+          teal: {
+            lighten5:   "#E0F2F1",
+            lighten4:   "#B2DFDB",
+            lighten3:   "#80CBC4",
+            lighten2:   "#4DB6AC",
+            lighten1:   "#26A69A",
+            base:       "#009688",
+            darken1:    "#00897B",
+            darken2:    "#00796B",
+            darken3:    "#00695C",
+            darken4:    "#004D40",
+            accent1:    "#A7FFEB",
+            accent2:    "#64FFDA",
+            accent3:    "#1DE9B6",
+            accent4:    "#00BFA5"
+          },
+          green: {
+            lighten5:   "#E8F5E9",
+            lighten4:   "#C8E6C9",
+            lighten3:   "#A5D6A7",
+            lighten2:   "#81C784",
+            lighten1:   "#66BB6A",
+            base:       "#4CAF50",
+            darken1:    "#43A047",
+            darken2:    "#388E3C",
+            darken3:    "#2E7D32",
+            darken4:    "#1B5E20",
+            accent1:    "#B9F6CA",
+            accent2:    "#69F0AE",
+            accent3:    "#00E676",
+            accent4:    "#00C853"
+          },
+          olive: {
+            lighten5:   "#F1F8E9",
+            lighten4:   "#DCEDC8",
+            lighten3:   "#C5E1A5",
+            lighten2:   "#AED581",
+            lighten1:   "#9CCC65",
+            base:       "#8BC34A",
+            darken1:    "#7CB342",
+            darken2:    "#689F38",
+            darken3:    "#558B2F",
+            darken4:    "#33691E",
+            accent1:    "#CCFF90",
+            accent2:    "#B2FF59",
+            accent3:    "#76FF03",
+            accent4:    "#64DD17"
+          },
+          yellow: {
+            lighten5:   "#FFFDE7",
+            lighten4:   "#FFF9C4",
+            lighten3:   "#FFF59D",
+            lighten2:   "#FFF176",
+            lighten1:   "#FFEE58",
+            base:       "#FFEB3B",
+            darken1:    "#FDD835",
+            darken2:    "#FBC02D",
+            darken3:    "#F9A825",
+            darken4:    "#F57F17",
+            accent1:    "#FFFF8D",
+            accent2:    "#FFFF00",
+            accent3:    "#FFEA00",
+            accent4:    "#FFD600"
+          },
+          orange: {
+            lighten5:   "#FFF3E0",
+            lighten4:   "#FFE0B2",
+            lighten3:   "#FFCC80",
+            lighten2:   "#FFB74D",
+            lighten1:   "#FFA726",
+            base:       "#FF9800",
+            darken1:    "#FB8C00",
+            darken2:    "#F57C00",
+            darken3:    "#EF6C00",
+            darken4:    "#E65100",
+            accent1:    "#FFD180",
+            accent2:    "#FFAB40",
+            accent3:    "#FF9100",
+            accent4:    "#FF6D00"
+          },
+          brown: {
+            lighten5:   "#EFEBE9",
+            lighten4:   "#D7CCC8",
+            lighten3:   "#BCAAA4",
+            lighten2:   "#A1887F",
+            lighten1:   "#8D6E63",
+            base:       "#795548",
+            darken1:    "#6D4C41",
+            darken2:    "#5D4037",
+            darken3:    "#4E342E",
+            darken4:    "#3E2723"
+          },
+          grey: {
+            lighten5:   "#FAFAFA",
+            lighten4:   "#F5F5F5",
+            lighten3:   "#EEEEEE",
+            lighten2:   "#E0E0E0",
+            lighten1:   "#BDBDBD",
+            base:       "#9E9E9E",
+            darken1:    "#757575",
+            darken2:    "#616161",
+            darken3:    "#424242",
+            darken4:    "#212121"
+          }
+        };
+
+        var baseColors = {
+          black:       "#000000",
+          white:       "#FFFFFF",
+          transparent: "N/A"
+        };
+
+        var colorNames = {
+          red:         "red",
+          pink:        "pink",
+          purple:      "purple",
+          violet:      "violet",
+          blue:        "blue",
+          lightBlue:   "light-blue",
+          cyan:        "cyan",
+          teal:        "teal",
+          green:       "green",
+          olive:       "olive",
+          yellow:      "yellow",
+          orange:      "orange",
+          brown:       "brown",
+          grey:        "grey",
+          black:       "black",
+          white:       "white",
+          transparent: "transparent"
+        };
+
+        var colorShades = {
+          lighten5:    "lighten-5",
+          lighten4:    "lighten-4",
+          lighten3:    "lighten-3",
+          lighten2:    "lighten-2",
+          lighten1:    "lighten-1",
+          base:        null,
+          darken1:     "darken-1",
+          darken2:     "darken-2",
+          darken3:     "darken-3",
+          darken4:     "darken-4",
+          accent1:     "accent-1",
+          accent2:     "accent-2",
+          accent3:     "accent-3",
+          accent4:     "accent-4"
+        };
+
+        function buildThemeColors() {
+          Object.keys(colors).forEach(function(key) {
+            var HTML = "";
+            var _color = colors[key];
+            var _name = colorNames[key];
+           
+            Object.keys(colors[key]).forEach(function(key) {
+              var _shade = colorShades[key];
+              var _hex = _color[key];
+              var _text = (/darken/.test(_shade)) ? "white" : "black";
+
+              HTML += "<div class='select-none p-2 bg-" + _name + " text-" + _text + " ";
+              if (_shade) {
+                HTML += "bg-" + _shade;
+              }
+              HTML += "'><span class='select-all'>bg-" + _name + " ";
+              if (_shade) {
+                HTML += "bg-" + _shade;
+              }
+              HTML += "</span><br/>(<span class='select-all'>" + _hex + "</span>)</div>";
+            });
+
+            $("[data-color='" + key + "']").html(HTML);
+          });
+        }
+
+        function buildBaseColors() {
+          var HTML = "";
+          
+          Object.keys(baseColors).forEach(function(key) {            
+            var _color = key;
+            var _name = colorNames[key];
+            var _hex = baseColors[key];
+            var _text = _color == "black" ? "white" : "black";
+
+            HTML += "<div class='select-none p-2 bg-" + _name + " text-" + _text;
+            HTML += "'><span class='select-all'>bg-" + _name + " ";
+            HTML += "</span><br/>(<span class='select-all'>" + _hex + "</span>)</div>";
+          });
+
+          $("[data-color='base']").html(HTML);
+        }
+
+        $(document).ready(function(){
+          $("#cbxSelectable").checkbox({
+            onChange: function(){
+              $("[data-color] div").toggleClass("bg-selectable");
+            }
+          });
+
+          buildThemeColors();
+          buildBaseColors();
+        });        
+      </script>
+    </body>
+</html>

@@ -1,0 +1,235 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>CSS Util Overview</title>
+        <meta name="description" content="">
+        <meta name="author" content="Trent Mentink">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="../dist/css-util.min.css">      
+        <style type="text/css">         
+          
+        </style>
+    </head>
+    <body>
+      <div class="ui container mb-2">       
+        <h1 class="mb-0">Overview</h1>
+
+        <div class="ui four column doubling stackable padded grid">         
+          <div id="borders" class="column">
+            <a href="https://v4-alpha.getbootstrap.com/utilities/borders/" target="_blank" class="text-underline"><h4>Borders</h4></a>
+            <div class="ui bulleted list"></div>
+          </div>
+          <div id="clearfix" class="column">
+            <a href="https://v4-alpha.getbootstrap.com/utilities/clearfix/" target="_blank" class="text-underline"><h4>Clearfix</h4></a>
+            <div class="ui bulleted list"></div>
+          </div>
+          <div id="color" class="column">
+            <a href="colors.html" target="_blank" class="text-underline"><h4>Color</h4></a>
+            <div class="ui bulleted list"></div>
+          </div>
+          <div id="display" class="column">
+            <a href="https://v4-alpha.getbootstrap.com/utilities/display-property/" target="_blank" class="text-underline"><h4>Display</h4></a>
+            <div class="ui bulleted list"></div>
+          </div>
+          <div id="flex" class="column">
+            <a href="https://v4-alpha.getbootstrap.com/utilities/flexbox/" target="_blank" class="text-underline"><h4>Flex</h4></a>
+            <div class="ui bulleted list"></div>
+          </div>
+          <div id="float" class="column">
+            <a href="https://v4-alpha.getbootstrap.com/utilities/responsive-helpers/#responsive-floats" target="_blank" class="text-underline"><h4>Float</h4></a>
+            <div class="ui bulleted list"></div>
+          </div>
+          <div id="sizing" class="column">
+            <a href="https://v4-alpha.getbootstrap.com/utilities/sizing/" target="_blank" class="text-underline"><h4>Sizing</h4></a>
+            <div class="ui bulleted list"></div>
+          </div>
+          <div id="spacing" class="column">
+            <a href="spacing.html" target="_blank" class="text-underline"><h4>Spacing</h4></a>
+            <div class="ui bulleted list"></div>
+          </div>
+          <div id="text" class="column">
+            <a href="https://v4-alpha.getbootstrap.com/utilities/typography/" target="_blank" class="text-underline"><h4>Typography</h4></a>
+            <div class="ui bulleted list"></div>
+          </div>
+          <div id="userSelect" class="column">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/user-select" target="_blank" class="text-underline"><h4>User Select</h4></a>
+            <div class="ui bulleted list"></div>
+          </div>      
+          <div id="align" class="column">
+            <a href="https://v4-alpha.getbootstrap.com/utilities/vertical-align/" target="_blank" class="text-underline"><h4>Vertical Algin</h4></a>
+            <div class="ui bulleted list"></div>
+          </div>
+          <div id="visibility" class="column">
+            <a href="https://v4-alpha.getbootstrap.com/utilities/invisible-content/" target="_blank" class="text-underline"><h4>Visibility</h4></a>
+            <div class="ui bulleted list"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SCRIPTS
+      ===========================================-->
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/semantic.min.js"></script>
+      <script type="text/javascript">
+        var utilities = {
+          align: [
+            "align-baseline",
+            "align-top",
+            "align-middle",
+            "align-bottom",
+            "align-text-top",
+            "align-text-bottom"
+          ],
+          borders: [
+            "b-0",
+            "bt-0",
+            "br-0",
+            "bb-0",
+            "bl-0",
+            "bx-0",
+            "by-0",           
+            "rounded",
+            "rounded-top",
+            "rounded-right",
+            "rounded-bottom",
+            "rounded-left",
+            "rounded-0",
+            "rounded-circle"
+          ],
+          clearfix: [
+            "clearfix"
+          ],
+          color: [
+            "bg-{color}",
+            "bg-lighten-*",
+            "bg-darken-*",
+            "bg-accent-*",
+            "bg-selectable",
+            "text-{color}",
+            "text-lighten-*",
+            "text-darken-*",
+            "text-accent-*",
+          ],
+          display: [
+            "d-none",
+            "d-inline",
+            "d-inline-block",
+            "d-block",
+            "d-table",
+            "d-table-cell",
+            "d-flex",
+            "d-inline-flex"
+          ],
+          flex: [
+            "flex-row",
+            "flex-column",
+            "flex-row-reverse",
+            "flex-column-reverse",
+            "flex-wrap",
+            "flex-nowrap",
+            "flex-wrap-reverse",
+            "justify-content-start",
+            "justify-content-end",
+            "justify-content-center",
+            "justify-content-between",
+            "justify-content-around",
+            "align-items-start",
+            "align-items-end",
+            "align-items-center",
+            "align-items-baseline",
+            "align-items-stretch",
+            "align-content-start",
+            "align-content-end",
+            "align-content-center",
+            "align-content-between",
+            "align-content-around",
+            "align-content-stretch",
+            "align-self-auto",
+            "align-self-start",
+            "align-self-end",
+            "align-self-center",
+            "align-self-baseline",
+            "align-self-stretch"
+          ],
+          float: [
+            "float-left",
+            "float-right",
+            "float-none"
+          ],
+          sizing: [
+            "w-25",
+            "w-50",
+            "w-75",
+            "w-100",
+            "h-25",
+            "h-50",
+            "h-75",
+            "h-100",
+            "mw-100",
+            "mh-100"
+          ],
+          spacing: [
+            "m-{size}",
+            "mt-{size}",
+            "mr-{size}",
+            "mb-{size}",
+            "ml-{size}",
+            "mx-{size}",
+            "my-{size}",
+            "mx-auto",
+            "p-{size}",
+            "pt-{size}",
+            "pr-{size}",
+            "pb-{size}",
+            "pl-{size}",
+            "px-{size}",
+            "py-{size}",
+          ],
+          text: [
+            "text-justify",
+            "text-nowrap",
+            "text-truncate",
+            "text-left",
+            "text-right",
+            "text-center",
+            "text-underline",
+            "text-linethrough",
+            "text-lowercase",
+            "text-uppercase",
+            "text-capitalize",
+            "text-normal",
+            "text-bold",
+            "text-italic"
+          ],
+          userSelect: [
+            "select-all",
+            "select-none"
+          ],
+          visibility: [
+            "visible",
+            "invisible"
+          ]
+        };
+
+        $(document).ready(function(){
+          buildLists()
+        });
+
+        function buildLists() {
+          Object.keys(utilities).forEach(function(key) {
+            var HTML = "";
+            var _classes = utilities[key];
+
+            for (var i = 0, i_len = _classes.length; i < i_len; i++) {
+              HTML += "<div class='item'>" + _classes[i] + "</div>"
+            }
+
+            $("#" + key + " .ui.list").html(HTML);
+          });
+        };
+      </script>
+    </body>
+</html>

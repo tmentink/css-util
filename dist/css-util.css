@@ -1,5 +1,5 @@
 /*!
- * CSS-Util v1.1.0 (https://github.com/tmentink/css-util)
+ * CSS-Util v1.1.1 (https://github.com/tmentink/css-util)
  * Copyright 2017 Trent Mentink
  * Licensed under MIT
  */
@@ -3107,35 +3107,35 @@
 }
 
 .rounded-0 {
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 
 .rounded-circle {
-  border-radius: 50%;
+  border-radius: 50% !important;
 }
 
 .rounded {
-  border-radius: 0.25rem;
+  border-radius: 0.25rem !important;
 }
 
 .rounded-top {
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important;
 }
 
 .rounded-right {
-  border-top-right-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem;
+  border-top-right-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
 }
 
 .rounded-bottom {
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
 }
 
 .rounded-left {
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
+  border-top-left-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
 }
 
 .clearfix::after {

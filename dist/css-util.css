@@ -1,5 +1,5 @@
 /*!
- * CSS-Util v1.1.1 (https://github.com/tmentink/css-util)
+ * CSS-Util v1.1.2 (https://github.com/tmentink/css-util)
  * Copyright 2017 Trent Mentink
  * Licensed under MIT
  */
@@ -3144,10 +3144,6 @@
   content: "";
 }
 
-.d-none {
-  display: none !important;
-}
-
 .d-inline {
   display: inline !important;
 }
@@ -3176,10 +3172,11 @@
   display: inline-flex !important;
 }
 
+.d-none {
+  display: none !important;
+}
+
 @media (min-width: 576px) {
-  .d-sm-none {
-    display: none !important;
-  }
   .d-sm-inline {
     display: inline !important;
   }
@@ -3201,12 +3198,12 @@
   .d-sm-inline-flex {
     display: inline-flex !important;
   }
+  .d-sm-none {
+    display: none !important;
+  }
 }
 
 @media (min-width: 768px) {
-  .d-md-none {
-    display: none !important;
-  }
   .d-md-inline {
     display: inline !important;
   }
@@ -3228,12 +3225,12 @@
   .d-md-inline-flex {
     display: inline-flex !important;
   }
+  .d-md-none {
+    display: none !important;
+  }
 }
 
 @media (min-width: 992px) {
-  .d-lg-none {
-    display: none !important;
-  }
   .d-lg-inline {
     display: inline !important;
   }
@@ -3255,12 +3252,12 @@
   .d-lg-inline-flex {
     display: inline-flex !important;
   }
+  .d-lg-none {
+    display: none !important;
+  }
 }
 
 @media (min-width: 1200px) {
-  .d-xl-none {
-    display: none !important;
-  }
   .d-xl-inline {
     display: inline !important;
   }
@@ -3281,6 +3278,9 @@
   }
   .d-xl-inline-flex {
     display: inline-flex !important;
+  }
+  .d-xl-none {
+    display: none !important;
   }
 }
 

@@ -1,6 +1,6 @@
 /*!
- * CSS-Util v1.1.2 (https://github.com/tmentink/css-util)
- * Copyright 2017 Trent Mentink
+ * CSS-Util v1.1.3 (https://github.com/tmentink/css-util)
+ * Copyright 2018 Trent Mentink
  * Licensed under MIT
  */
 
@@ -26,6 +26,10 @@
 
 .align-text-top {
   vertical-align: text-top !important;
+}
+
+.bg-selectable {
+  cursor: pointer;
 }
 
 .bg-red {
